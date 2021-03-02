@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
 *
 {
     margin: 0;
@@ -7,19 +10,52 @@
 }
 
 
-body
-{
-    background-color: hsl(185, 75%, 39%);
-    font-family: "Kumbh Sans", sans-serif;
-}
 
 .container{
+    
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    min-width: 100vh;
     height: 100vh;
-    width: 100vw;
-    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 50vw bottom 40vh, left 50vw top 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
 }    
+
+.card
+{
+    border: solid 1px black;
+    border-radius: 20px;
+    width: 328px;
+    height: 375px;
+    background-color: white;
+    overflow: hidden;
+    
+    
+}
+
+.card img
+{
+    justify-content: center;
+}
+
+.card .minifooter
+{
+    text-align: center;
+    border-top: solid 1px gray;
+}
+
+.card .minifooter ul
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.card .minifooter li
+{
+    
+}
